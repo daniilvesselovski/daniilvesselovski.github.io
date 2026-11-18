@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pottery Babes, the members' pottery studio in Tallinn</title>
+<meta name="description" content="An evening at the table for €30 or a month for €180. Prototype of the Pottery Babes website with sample data.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#FAF6E6">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/favicon-32px.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-180px.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/pottery-babes.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app" id="app">
+ <div class="devwrap" id="devwrap"><div class="devbox" id="devbox"><div class="device" id="device" data-dev="phone"><div class="stage" id="stage">
+
+  <!-- HOME -->
+  <section class="screen" id="s-home">
+   <header class="bar" data-bar></header>
+   <div class="scroll" id="homescroll">
+    <div class="hero">
+     <div class="hero-img" id="heroimg"><img data-img="hero" alt="Hands shaping a small clay bowl at the studio table"></div>
+     <div class="hero-t">
+      <h1 class="h1 hl" id="herohl"><span><b>An evening</b></span> <span><b>at the table</b></span></h1>
+      <p data-in style="--i:2">Two hours of clay with Arina or Leila.<br>No skills needed. Clay, firing, tea included.</p>
+      <div class="hero-cards" data-in style="--i:3">
+       <button class="nextcard patt" id="nextcard" data-act="book" data-ev="1119">
+        <span class="nc-top"><span><span class="nc-l">Next evening</span><span><span class="nc-p">Next: </span>Thu 19 Nov, 18:30</span></span><span class="num" style="font-size:20px" data-guest>€30</span><span class="small b" data-mem id="nextinc">Included</span></span>
+        <span class="seatline"><span class="seats" data-taken="5"></span><span class="small b">3 seats left</span></span>
+       </button>
+       <button class="nextcard monthcard patt s-lilac" data-mem data-act="nav-profile">
+        <span class="nc-top"><span><span class="nc-l">Your membership</span><span>Active until 16 Dec</span></span></span>
+        <span class="seatline"><span class="small b mynext" data-d="See your profile">See your profile</span><span class="ic s chev" data-ic="fwd" style="margin-left:auto"></span></span>
+       </button>
+       <button class="nextcard monthcard patt s-lilac" data-guest data-act="member">
+        <span class="nc-top"><span><span class="nc-l">Membership</span><span>A month at the table</span></span><span class="num" style="font-size:20px">€180</span></span>
+        <span class="seatline"><span class="small b">Come as often as you like</span><span class="ic s chev" data-ic="fwd" style="margin-left:auto"></span></span>
+       </button>
+       <button class="rowbtn memrow" data-guest data-act="member"><span class="small">Coming often? A month is €180</span><span class="ic chev" data-ic="fwd"></span></button>
+       <button class="rowbtn memrow" data-mem data-act="nav-profile"><span class="small mynext" data-d="Your membership is active until 16 Dec">Your membership is active until 16 Dec</span><span class="ic chev" data-ic="fwd"></span></button>
+      </div>
+     </div>
+    </div>
+
+    <div class="sec"><div class="sec-h" data-reveal><h2 class="h2">How it goes</h2><span class="h2">01/05</span></div>
+     <div class="steps">
+      <div class="step" data-reveal style="--i:0"><div class="ph"><img data-img="step1" alt=""><span class="n">1</span></div><div class="tx"><b>Come as you are</b><small>No experience, no kit. The kettle is on.</small></div></div>
+      <div class="step" data-reveal style="--i:1"><div class="ph"><img data-img="step2" alt=""><span class="n">2</span></div><div class="tx"><b>Make a thing</b><small>Two hours at the table. Arina or Leila show how.</small></div></div>
+      <div class="step" data-reveal style="--i:2"><div class="ph"><img data-img="step3" alt=""><span class="n">3</span></div><div class="tx"><b>We fire it</b><small>It dries, meets the kiln and waits on the shelf.</small></div></div>
+      <div class="step" data-reveal style="--i:3"><div class="ph"><img data-img="step4" alt=""><span class="n">4</span></div><div class="tx"><b>Come back for it</b><small>We message you when it is ready.</small></div></div>
+     </div>
+    </div>
+
+    <div class="sec"><div class="sec-h" data-reveal><h2 class="h2">Next evenings</h2><span class="h2">02/05</span></div>
+     <div id="homelist"></div>
+     <button class="rowbtn rowlink" data-reveal data-act="book" data-view="month"><span class="small b">See the whole month</span><span class="ic chev" data-ic="fwd"></span></button>
+    </div>
+
+    <div class="split belong s-lilac" id="belong" data-reveal>
+     <div class="ph"><img data-img="belong" alt="Two friends laughing over a clay cup at the table"></div>
+     <div class="in2 patt">
+      <h2 class="h1 s">Belong</h2>
+      <ul class="checks"><li style="--i:0"><span class="ic s" data-ic="check"></span>Come as often as you like</li><li style="--i:1"><span class="ic s" data-ic="check"></span>Your own shelf</li><li style="--i:2"><span class="ic s" data-ic="check"></span>Firing included</li><li style="--i:3"><span class="ic s" data-ic="check"></span>A members' evening every month</li></ul>
+      <div data-guest>
+       <div class="priceline"><span class="num">€180</span><span class="small">a month</span></div>
+       <button class="btn quiet" data-act="join">Become a member</button>
+       <p class="small mute" style="margin-top:14px">Here about twice a week?<br>Then the month costs less than dropping in.</p>
+      </div>
+      <div data-mem>
+       <p class="status" style="margin:18px 0 4px"><svg class="tick in" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><path pathLength="1" d="M7 12.4l3.3 3.3L17 9"/></svg>Your membership is active</p>
+       <p class="small" style="margin-bottom:16px">17 Nov to 16 Dec, renews 17 Dec</p>
+       <button class="btn quiet" data-act="book">Book an evening</button>
+       <p class="small mute" style="margin-top:14px">Evenings are included.<br>Nothing to pay when you book.</p>
+      </div>
+     </div>
+    </div>
+
+    <div class="sec" id="madehome"><div class="sec-h" data-reveal><h2 class="h2">Made here</h2><span class="h2">03/05</span></div>
+     <div class="pad" style="padding-top:var(--sh);display:grid;gap:18px">
+      <p class="lead" data-reveal>Meet the members. Each has a shelf at the studio and a page for what came out of the kiln.</p>
+      <div class="mems" id="homemems" data-reveal></div>
+      <div class="wgrid" id="homeworks"></div>
+     </div>
+     <button class="rowbtn rowlink" data-reveal data-act="nav-made"><span class="small b">See the whole shelf</span><span class="ic chev" data-ic="fwd"></span></button>
+    </div>
+
+    <div class="sec find" id="find"><div class="sec-h" data-reveal><h2 class="h2">Find us</h2><span class="h2">04/05</span></div>
+     <div class="split rev s-c50" data-reveal>
+      <div class="ph"><img data-img="studio" alt="The studio room with a long table by the window"></div>
+      <div class="in2 patt">
+       <h3 class="h1 s">Ankru 8, Tallinn</h3>
+       <ul class="facts"><li><span class="ic s" data-ic="pin"></span>In the courtyard of the Põhjala factory</li><li><span class="ic s" data-ic="cal"></span>The glass door opens for booked evenings</li></ul>
+       <button class="btn quiet" data-act="noop">Open in Maps<span class="ic s chev" data-ic="fwd"></span></button>
+      </div>
+     </div>
+    </div>
+
+    <div class="sec"><div class="sec-h" data-reveal><h2 class="h2">Good to know</h2><span class="h2">05/05</span></div>
+     <div class="know">
+       <div class="acc"><button class="acc-h" data-act="acc" aria-expanded="false"><span>Do I need to know how?</span><i class="pm"></i></button><div class="acc-b"><div><p>No. Most people at the table try clay for the first time. Arina or Leila show every step.</p></div></div></div>
+       <div class="acc"><button class="acc-h" data-act="acc" aria-expanded="false"><span>What is in the €30?</span><i class="pm"></i></button><div class="acc-b"><div><p>Two hours at the table, clay, firing and tea.</p></div></div></div>
+       <div class="acc"><button class="acc-h" data-act="acc" aria-expanded="false"><span>Can I come alone?</span><i class="pm"></i></button><div class="acc-b"><div><p>Yes. Many people do. You share one table with everyone else.</p></div></div></div>
+       <div class="acc"><button class="acc-h" data-act="acc" aria-expanded="false"><span>When do I get my piece?</span><i class="pm"></i></button><div class="acc-b"><div><p>After it has dried and been fired. We message you when it is ready to pick up.</p></div></div></div>
+     </div>
+     <div class="wonder patt s-blue duo" data-reveal><div class="duo-t"><b>Still wondering?</b><br><button class="link" style="padding:4px 0" data-act="noop">Write to us on Instagram</button></div><span class="ch" data-c="plate" data-e="thinking"></span></div>
+    </div>
+
+    <footer class="foot patt" id="foot">
+     <div class="foot-a"><img data-logo="foot" alt="Pottery Babes"><h2 class="h1 foot-h">See you at&nbsp;the&nbsp;table</h2></div>
+     <div class="foot-b">
+      <div><span>Ankru 8, Tallinn</span><span>Põhjala factory courtyard</span></div>
+      <div><span>An evening, €30</span><span>A month, €180</span></div>
+      <div><span>Instagram @pottery.babes</span><span>EN&nbsp; ET&nbsp; RU</span></div>
+     </div>
+     <div class="foot-c"><span>© 2026 Pottery Babes</span><span>Prototype for review. Photos, members and dates are sample data, studio photos are AI placeholders.</span></div>
+    </footer>
+   </div>
+   <div class="sticky" id="sticky"><button class="btn buy" data-act="book"><span>Book an evening</span><i class="div" data-guest></i><span data-guest>€30</span></button></div>
+  </section>
+
+  <!-- MEMBERSHIP -->
+  <section class="screen" id="s-member" hidden>
+   <header class="bar" data-bar></header>
+   <div class="scroll"><div class="body two">
+    <div class="main">
+     <button class="link crumb top" data-act="back"><span class="ic s" data-ic="back"></span>Back</button>
+     <h1 class="h1 top" data-in style="--i:0">A month at&nbsp;the&nbsp;table</h1>
+     <p class="lead top" data-in style="--i:1">Come whenever the studio is open, as often as you like. Your work waits on your own shelf.</p>
+     <div class="priceline" data-in style="--i:3;margin:4px 0"><span class="num" style="font-size:var(--h1)">€180</span><span>a month</span></div>
+     <p class="small mute" data-guest data-in style="--i:4">Here about twice a week? Then the month costs less than dropping in.</p><p class="small mute" data-mem data-in style="--i:4">Your month runs 17 Nov to 16 Dec and renews 17 Dec. Evenings are included.</p>
+    </div>
+    <aside class="side">
+     <div class="card s-lilac" data-in style="--i:2"><div class="ph"><img data-img="belong" alt=""></div>
+      <div class="rows" style="padding:14px 16px 16px"><ul class="checks" style="margin:0"><li style="--i:1"><span class="ic s" data-ic="check"></span>Come as often as you like</li><li style="--i:2"><span class="ic s" data-ic="check"></span>Your own shelf</li><li style="--i:3"><span class="ic s" data-ic="check"></span>Firing included</li><li style="--i:4"><span class="ic s" data-ic="check"></span>A members' evening every month</li></ul></div></div>
+    </aside>
+   </div></div>
+   <div class="footbar"><button class="btn buy" data-guest data-act="join"><span>Become a member</span><i class="div"></i><span>€180</span></button><p class="small" data-mem><b>Your membership is active</b>, until 16 Dec</p><button class="btn next" data-mem data-act="book">Book an evening</button></div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="screen" id="s-book" hidden>
+   <div class="flowbar" data-flowbar></div>
+   <div class="scroll"><div class="body two">
+    <div class="main">
+     <h1 class="h1 s" data-in style="--i:0">Pick an evening</h1>
+     <p class="status" data-mem data-in style="--i:1"><svg class="tick" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><path pathLength="1" d="M7 12.4l3.3 3.3L17 9"/></svg>Active membership, nothing to pay</p>
+     <div class="seg short" id="viewseg" data-in style="--i:1"><i class="thumb"></i><button data-act="view" data-view="list" class="on">List</button><button data-act="view" data-view="month">Month</button></div>
+     <div id="bookbody"></div>
+    </div>
+    <aside class="side wideonly">
+     <div class="card s-c50" data-in style="--i:2"><div class="ph"><img data-img="studio" alt=""></div><div class="rows"><div><span class="ic s" data-ic="pin"></span>Ankru 8, Põhjala factory courtyard</div><div><span class="ic s" data-ic="cal"></span>Two hours at one table</div><div data-guest><span class="ic s" data-ic="check"></span>Clay, firing and tea are in the €30</div><div data-mem><span class="ic s" data-ic="check"></span>Included in your membership</div></div></div>
+    </aside>
+   </div></div>
+   <div class="footbar"><p class="small" id="bookstatus">No evening chosen yet</p><button class="btn next" id="bookgo" data-act="book-next" disabled>Pick an evening</button></div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="screen" id="s-details" hidden>
+   <div class="flowbar" data-flowbar></div>
+   <div class="scroll"><form class="body two" id="detform" novalidate>
+    <div class="main">
+     <h1 class="h1 s top" id="dethl" data-in style="--i:0">Your details</h1>
+     <label class="f" data-in style="--i:2"><span>Name</span><input name="name" autocomplete="off" placeholder="Mari Tamm"><em class="err"><span><i>!</i>Tell us your name</span></em></label>
+     <label class="f" data-in style="--i:3"><span>Email</span><input name="email" type="email" inputmode="email" autocomplete="off" placeholder="you@example.com"><em class="err"><span><i>!</i>This email looks unfinished</span></em></label>
+     <label class="f" id="passrow" data-in style="--i:4" hidden><span>Password</span><input name="pass" class="pw" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="At least 8 characters"><em class="err"><span><i>!</i>Use at least 8 characters</span></em></label>
+     <div class="ctl" id="seatsrow" data-in style="--i:4"><span><b>Seats</b><br><span class="small mute" id="seatsleft"></span></span><div class="stepper"><button type="button" data-act="seat" data-d="-1" aria-label="One seat fewer" data-ic="minus"></button><span class="n" aria-live="polite"><b id="seatn">1</b></span><button type="button" data-act="seat" data-d="1" aria-label="One seat more" data-ic="plus"></button></div></div>
+     <div class="linkrow" data-in style="--i:5"><button type="button" class="link" data-act="fill">Fill in sample details</button><button type="button" class="link" id="haveacc" data-act="login" hidden>Already a member? Log in</button></div>
+    </div>
+    <aside class="side"><div class="sumcard" data-in style="--i:1"><div><b id="detsum1"></b><br><span class="small mute" id="detsum2"></span></div><span class="num" id="dettotal">€30</span></div></aside>
+   </form></div>
+   <div class="footbar"><button class="btn next" data-act="details-next">Continue to payment</button></div>
+  </section>
+
+  <!-- PAY -->
+  <section class="screen" id="s-pay" hidden>
+   <div class="flowbar" data-flowbar></div>
+   <div class="scroll"><div class="body two">
+    <div class="main">
+     <h1 class="h1 s top" data-in style="--i:0">Payment</h1>
+     <div class="alert" id="payalert" role="alert"><div><div class="inner"><i class="bang">!</i><span><b>The payment did not go through</b><br>Nothing was charged. Try again or pick another way to pay.</span></div></div></div>
+     <div class="seg" id="payseg" data-in style="--n:3;--i:2"><i class="thumb"></i><button data-act="paytab" data-tab="card" class="on">Card</button><button data-act="paytab" data-tab="wallet">Apple Pay</button><button data-act="paytab" data-tab="bank">Bank link</button></div>
+     <div id="paypanes" data-in style="--i:3">
+      <div class="pane" data-pane="card"><label class="f"><span>Card number</span><input readonly value="Sample card, nothing is charged" aria-label="Card number, sample"></label><div class="two-f"><label class="f"><span>Expires</span><input readonly value="MM / YY"></label><label class="f"><span>CVC</span><input readonly value="•••"></label></div></div>
+      <div class="pane" data-pane="wallet" hidden><p>You confirm with your phone on the next step. No card details to type.</p></div>
+      <div class="pane" data-pane="bank" hidden><p class="small mute">Pick your bank. You confirm the payment in the bank's own page.</p><div class="banks"><button class="bank patt sel" data-act="bank">Bank one<span class="ic s" data-ic="check"></span></button><button class="bank patt" data-act="bank">Bank two<span class="ic s" data-ic="check"></span></button><button class="bank patt" data-act="bank">Bank three<span class="ic s" data-ic="check"></span></button></div></div>
+     </div>
+    </div>
+    <aside class="side"><div class="sumcard" data-in style="--i:1"><div><b id="paysum1"></b><br><span class="small mute" id="paysum2"></span></div><span class="num" id="paytotal">€30</span></div></aside>
+   </div></div>
+   <div class="footbar"><button class="btn buy" id="paygo" data-act="pay"><span>Pay</span><i class="div"></i><span id="paybtnsum">€30</span></button><p class="small mute" style="text-align:center">Prototype. Nothing is charged and nothing you type leaves this page.</p></div>
+  </section>
+
+  <!-- PROCESSING -->
+  <section class="screen" id="s-processing" hidden>
+   <div class="center"><div class="loader"><i class="lshadow" id="lshadow"></i><span class="ch eq" id="loaderch" data-c="star" data-e="joy"></span></div><div><b style="font-size:18px" id="loadt">Paying</b><p class="small mute">One moment. Keep this page open.</p></div></div>
+  </section>
+
+  <!-- CONFIRMED -->
+  <section class="screen" id="s-confirmed" hidden>
+   <header class="bar" data-bar></header>
+   <div class="scroll"><div class="body two">
+    <div class="main">
+     <p class="status top" data-in style="--i:0"><svg class="tick" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><path pathLength="1" d="M7 12.4l3.3 3.3L17 9"/></svg>Booking confirmed</p>
+     <div class="lockup auto top" data-in style="--i:1"><h1 class="h1" id="confhl">See you Thursday</h1><p>Your seat is booked.<br>We sent the details to <span id="confmail">mari@example.com</span>.</p><span class="ch pop" style="--i:4" data-c="mug" data-e="joy"></span></div>
+     <button class="btn quiet" data-in style="--i:4" data-act="addcal"><span class="ic s" data-ic="cal"></span>Add to calendar</button>
+     <button class="link" data-in style="--i:5;justify-self:center" data-act="noop">Change or cancel</button>
+    </div>
+    <aside class="side">
+     <div class="card s-c50" data-in style="--i:3"><div class="ph"><img data-img="studio" alt=""></div><div class="rows"><div><span class="ic s" data-ic="cal"></span><span id="confwhen"></span></div><div><span class="ic s" data-ic="pin"></span>Ankru 8, Põhjala factory courtyard</div><div><span class="ic s" data-ic="user"></span><span id="confseats"></span></div></div></div>
+     <div class="upsell s-lilac last" data-guest data-in style="--i:6"><div><b style="font-size:16px;line-height:1.3">A month at the table is €180</b><br><span class="small">Come as often as you like.</span></div><button class="btn quiet" data-act="member">See the month<span class="ic s chev" data-ic="fwd"></span></button></div>
+     <div class="upsell s-lilac last" data-mem data-in style="--i:6"><div><b style="font-size:16px;line-height:1.3">It is in your profile now</b><br><span class="small">Your next evening sits there next to your membership.</span></div><button class="btn quiet" data-act="nav-profile">See your profile<span class="ic s chev" data-ic="fwd"></span></button></div>
+    </aside>
+   </div></div>
+  </section>
+
+  <!-- WAITING LIST -->
+  <section class="screen" id="s-wait" hidden>
+   <div class="flowbar"><div class="row1"><span style="width:44px"></span><span class="t">Waiting list</span><button class="icon" data-act="close" aria-label="Close" data-ic="x"></button></div></div>
+   <div class="scroll"><form class="body narrow" id="waitform" novalidate>
+    <p class="small b" data-in style="--i:0" id="waitwhen"></p>
+    <h1 class="h1" data-in style="--i:1">This evening is&nbsp;full</h1>
+    <p data-in style="--i:2">Leave your email. We will write if a seat frees up.<span data-guest> Nothing is charged until you book.</span></p>
+    <label class="f" data-in style="--i:3"><span>Email</span><input name="email" type="email" inputmode="email" autocomplete="off" placeholder="you@example.com"><em class="err"><span><i>!</i>This email looks unfinished</span></em></label>
+   </form></div>
+   <div class="footbar"><button class="btn next" data-act="wait-go">Put me on the list</button></div>
+  </section>
+  <section class="screen" id="s-waitdone" hidden>
+   <div class="flowbar"><div class="row1"><span style="width:44px"></span><span class="t">Waiting list</span><button class="icon" data-act="close" aria-label="Close" data-ic="x"></button></div></div>
+   <div class="scroll"><div class="body narrow">
+    <p class="status" data-in style="--i:0"><svg class="tick" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><path pathLength="1" d="M7 12.4l3.3 3.3L17 9"/></svg>Saved</p>
+    <div class="lockup auto" data-in style="--i:1"><h1 class="h1">You are on&nbsp;the&nbsp;list</h1><p>We will write to <span id="waitmail">mari@example.com</span> if a seat frees up on Wed 25 Nov.<span data-guest> Nothing is charged until you book.</span></p><span class="ch pop" style="--i:4" data-c="teapot" data-e="pleased"></span></div>
+    <div class="emptycard s-blue" data-in style="--i:3"><b style="font-size:16px;line-height:1.3">Rather not wait? This one still has seats</b><div id="waitalt"></div><button class="btn buy" data-act="wait-alt"><span id="waitaltlbl">Book Sun 22 Nov</span><i class="div" data-guest></i><span data-guest>€30</span></button></div>
+   </div></div>
+  </section>
+
+  <!-- WELCOME -->
+  <section class="screen" id="s-welcome" hidden>
+   <header class="bar" data-bar></header>
+   <div class="scroll"><div class="body two">
+    <div class="main">
+     <p class="status top" data-in style="--i:0"><svg class="tick" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><path pathLength="1" d="M7 12.4l3.3 3.3L17 9"/></svg>You are a member</p>
+     <div class="lockup blk top" data-in style="--i:1"><div class="lk-t"><h1 class="h1">Welcome in</h1><p>Your month runs 17 Nov to 16 Dec.<br>Your shelf is waiting.</p></div><span class="ch pop" style="--i:4" data-c="star" data-e="wink"></span></div>
+     <button class="btn buy" data-in style="--i:4" data-act="book">Book your first evening</button>
+     <button class="btn quiet" data-in style="--i:5" data-act="profile" id="welprofile">Set up your profile</button>
+    </div>
+    <aside class="side">
+     <div class="mcard s-lilac" data-in style="--i:3"><div class="strip patt"></div><div class="rows"><div><span class="ic s" data-ic="user"></span><span style="flex:1"><span id="welname">Mari Tamm</span>, member</span><span class="ch eq" id="welavatar" style="--eq:24px" data-c="mug" data-e="hello" hidden></span></div><div><span class="ic s" data-ic="cal"></span>17 Nov to 16 Dec, renews 17 Dec</div></div></div>
+    </aside>
+   </div></div>
+  </section>
+
+  <!-- PICKER -->
+  <section class="screen" id="s-picker" hidden>
+   <div class="flowbar"><div class="row1"><button class="icon" data-act="back" aria-label="Back" data-ic="back"></button><span class="t">Your profile</span><button class="icon" data-act="back" aria-label="Close" data-ic="x"></button></div></div>
+   <div class="scroll"><div class="body narrow">
+    <div class="lockup blk" data-max="132" data-in style="--i:0"><div class="lk-t"><h1 class="h1 s">Choose your character</h1><p>It stands next to your name and on your shelf tag. You can change it any time.</p></div><span class="chbox"><span class="ch eq" id="pickch" data-c="mug" data-e="joy"></span></span></div>
+    <div class="tiles" id="tiles" role="radiogroup" aria-label="Character" data-in style="--i:2"></div>
+    <div class="f" data-in style="--i:3"><span id="coverlbl">Colour of your profile plate</span><div class="covers" id="covers" role="radiogroup" aria-labelledby="coverlbl"></div></div>
+    <label class="f" data-in style="--i:4"><span>Name on your profile</span><input id="pickname" value="Mari T" autocomplete="off"></label>
+   </div></div>
+   <div class="footbar"><button class="btn next" data-act="save-profile">Save my profile</button><button class="link" style="justify-self:center;padding:6px" data-act="back">Skip for now</button></div>
+  </section>
+
+  <!-- LOG IN -->
+  <section class="screen" id="s-login" hidden>
+   <div class="flowbar"><div class="row1"><span style="width:44px"></span><span class="t">Members</span><button class="icon" data-act="close" aria-label="Close" data-ic="x"></button></div></div>
+   <div class="scroll"><form class="body narrow" id="loginform" novalidate>
+    <h1 class="h1" data-in style="--i:0">Welcome back</h1>
+    <p data-in style="--i:1">Log in to book evenings on your membership and to see your shelf.</p>
+    <label class="f" data-in style="--i:2"><span>Email</span><input name="email" type="email" inputmode="email" autocomplete="off" placeholder="you@example.com"><em class="err"><span><i>!</i>This email looks unfinished</span></em></label>
+    <label class="f" data-in style="--i:3"><span>Password</span><input name="pass" class="pw" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Your password"><em class="err"><span><i>!</i>Use at least 8 characters</span></em></label>
+    <div class="linkrow" data-in style="--i:4"><button type="button" class="link" data-act="login-fill">Fill in sample details</button><button type="button" class="link" data-act="noop">Forgot your password?</button></div>
+    <div class="upsell s-lilac" data-in style="--i:5"><div><b style="font-size:16px;line-height:1.3">Not a member yet?</b><br><span class="small">A month at the table is €180. You create your account when you join.</span></div><button type="button" class="btn quiet" data-act="member">See the month<span class="ic s chev" data-ic="fwd"></span></button></div>
+   </form></div>
+   <div class="footbar"><button class="btn next" data-act="login-go">Log in</button><p class="small mute" style="text-align:center">Prototype. Nothing you type leaves this page.</p></div>
+  </section>
+
+  <!-- MADE HERE, WORK, PROFILE -->
+  <section class="screen" id="s-made" hidden><header class="bar" data-bar></header><div class="scroll"><div class="body" id="madebody"></div></div></section>
+  <section class="screen" id="s-work" hidden><header class="bar" data-bar></header><div class="scroll"><div class="body two rev" id="workbody"></div></div></section>
+  <section class="screen" id="s-profile" hidden><header class="bar" data-bar></header><div class="scroll"><div class="body" id="profbody"></div></div></section>
+
+  <!-- MENU -->
+  <div class="menu" id="menu" aria-hidden="true">
+   <header class="bar"><span class="logo"><img class="lg-pb" style="display:block" data-logo="pb" alt=""></span><div class="bar-r"><button class="icon" data-act="menu-close" aria-label="Close menu" data-ic="x"></button></div></header>
+   <div class="scroll">
+    <button class="mrow" style="--i:0" data-act="nav-book"><span class="h1">Evenings</span><small>Dates and free seats</small></button>
+    <button class="mrow" style="--i:1" data-act="nav-member"><span class="h1">Membership</span><small data-guest>A month at the table, €180</small><small data-mem>Yours is active until 16 Dec</small></button>
+    <button class="mrow" style="--i:2" data-act="nav-made"><span class="h1">Made here</span><small>Members and what they made</small></button>
+    <button class="mrow" style="--i:3" data-act="nav-find"><span class="h1">Find us</span><small>Ankru 8, Tallinn</small></button>
+    <button class="mrow" style="--i:4" data-mem data-act="nav-profile"><span class="h1">Your profile</span><small>Your membership, your next evening, your shelf</small></button>
+    <button class="mrow" style="--i:4" data-guest data-act="login"><span class="h1">Log in</span><small>For members</small></button>
+    <div class="pad mx" style="--i:5;padding-top:20px;padding-bottom:24px;display:grid;gap:16px">
+     <button class="nextcard patt duo" style="text-align:left" data-act="nav-book" data-chhost><span class="duo-t"><span class="small b">Next evening</span><br><b style="font-size:17px">Thu 19 Nov, 18:30</b><br><span class="small">3 seats left</span></span><span class="ch" data-c="bowl" data-e="hello"></span></button>
+     <div class="seg" id="langseg" style="--n:3"><i class="thumb"></i><button data-act="lang" class="on">EN</button><button data-act="lang">ET</button><button data-act="lang">RU</button></div>
+     <p class="small mute" style="display:flex;justify-content:space-between;align-items:center"><span>Instagram @pottery.babes</span><button class="link" data-mem style="padding:6px 0;color:var(--cocoa-800)" data-act="logout">Log out</button></p>
+    </div>
+   </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+ </div></div></div></div>
+
+ <div class="pill"><button class="pill-b" data-act="panel" aria-label="Open the motion panel"><b id="pillt">Motion</b><span id="pilld">Speed, screens and timings</span></button><div class="pseg" id="pseg"><button data-act="device" data-d="phone" class="on">Phone</button><button data-act="device" data-d="tablet">Tablet</button><button data-act="device" data-d="desktop">Computer</button></div></div>
+ <div class="scrim" id="scrim" data-act="panel"></div>
+ <aside class="panel" id="panel" aria-label="Motion panel">
+  <h2 class="h2">Motion</h2>
+  <p class="mute">Click through the site. Every motion that plays lights up in the list below with its timing. Photos, members and their pieces are placeholders.</p>
+  <div class="now" aria-live="off"><b id="nowt">Nothing played yet</b><span id="nowd">Tap anything in the prototype.</span></div>
+  <h3>Screen</h3>
+  <div class="seg" id="devseg" style="--n:3"><i class="thumb"></i><button data-act="device" data-d="phone" class="on">Phone</button><button data-act="device" data-d="tablet">Tablet</button><button data-act="device" data-d="desktop">Computer</button></div>
+  <button class="ctl" role="switch" aria-checked="false" data-act="sw" data-k="wide" id="widesw" style="margin-top:6px"><span>Hide this panel for a bigger preview</span><i class="sw"></i></button>
+  <h3>Speed</h3>
+  <div class="seg" id="speedseg" style="--n:4"><i class="thumb"></i><button data-act="speed" data-s="1" class="on">1×</button><button data-act="speed" data-s="2">½</button><button data-act="speed" data-s="4">¼</button><button data-act="speed" data-s="10">⅒</button></div>
+  <h3>Switches</h3>
+  <button class="ctl" role="switch" aria-checked="false" data-act="sw" data-k="member"><span>Logged in as a member</span><i class="sw"></i></button>
+  <button class="ctl" role="switch" aria-checked="false" data-act="sw" data-k="rm"><span>Reduced motion</span><i class="sw"></i></button>
+  <button class="ctl" role="switch" aria-checked="false" data-act="sw" data-k="failLoad"><span>The next list does not load</span><i class="sw"></i></button>
+  <button class="ctl" role="switch" aria-checked="false" data-act="sw" data-k="failPay"><span>The next payment fails</span><i class="sw"></i></button>
+  <h3>Jump to a screen</h3>
+  <div class="chips" id="chips"></div>
+  <h3>Timings</h3>
+  <div class="spec" id="spec"></div>
+ </aside>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
